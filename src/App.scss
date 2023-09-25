@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+:root {
+    margin: 0px;
+}
+
+$bg-header:#14274E;
+$text-light-color: white;
+$text-dark-color: #000308;
+$text-btn-color: #EF9E00;
+
+.App {
+    width: 720px;
+    margin: auto;
+    margin-top: 40px;
+    .head-container {
+        background-color: $bg-header;
+        padding: 19px 50px 19px 50px;
+        display: flex;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px;
+        .head-log-wrapper {
+            display: flex;
+            .head-icon {
+                margin-right: 15.72px;
+            }
+            .head-content {
+                position: relative;
+                margin-top: 5px;
+                
+                p {
+                    margin: 0px;
+                    position: absolute;
+                    bottom: -1px;
+                    color: $text-light-color;
+                    font-weight: 275;
+                    letter-spacing: 0.755px;
+                    font-size: 18.82px;
+                    margin-left: 18px;
+                }
+            }
+        }
+
+        .head-close-wrapper {
+            margin-left: auto;
+            display: flex;
+            cursor: pointer;
+            p {
+                margin: 0px;
+                color: $text-btn-color;
+                font-weight: 700;
+                font-size: 18.82px;
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .chatui-container {
+        background-image: url('/assets/bgs/bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 652px;
+        max-height: 652px;
+        border-bottom: 2px solid rgba(57, 72, 103, 0.10);
+        padding-top: 45px;
+        padding-left: 50px;
+        padding-right: 50px;
+        overflow-y: scroll;
+        /* Define the animation for scrolling down */
+        scroll-behavior: smooth;
+
+        .user-msg {
+            max-width: 400px;
+            margin-left: auto;
+            border: 2px solid #EF9E00;
+            padding: 15px 30px;
+            border-radius: 15px 0px 15px 15px;
+            background: #FCF4E5;
+            word-wrap: break-word;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            margin-bottom: 40px;
+        }
+
+        .bot-msg {
+            display: flex;
+            .bot-avatar-box {
+                span {
+                    background-color: #14274E;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                }
+            }
+
+            .bot-content-box {
+                max-width: 450px;
+                margin-left: 20px;
+                padding: 15px 30px 15px 30px;
+                border-radius: 0px 15px 15px 15px;
+                border: 2px solid var(--surface-surface-invert, #14274E);
+                background: #E7E8EC;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                margin-bottom: 40px;
+            }
+        }
+        // img {
+        // }
+    }
+
+    .search-container {
+        padding: 20.5px 50px 20.5px 50px;
+        display: flex;
+        align-items: center;
+        border-radius: 0px 0px 10px 10px;
+        border-bottom: 1px solid rgba(57, 72, 103, 0.10);
+        border-left: 1px solid rgba(57, 72, 103, 0.10);
+        border-right: 1px solid rgba(57, 72, 103, 0.10);
+        .search-input {
+            width: 100%;
+            padding: 15px 20px 15px 20px;
+            font-size: 16px;
+            border: 2px solid #000308;
+            border-radius: 10px 0px 0px 10px;
+            border-right: none;
+            outline: none;
+        }
+        .submit-btn {
+            cursor: pointer;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #14274E;
+                padding: 8px;
+                border-radius: 0px 10px 10px 0px;
+            }
+        }
+    }
+}
